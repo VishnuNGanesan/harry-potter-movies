@@ -8,8 +8,8 @@ import { Movie, MovieDetails } from './movie';
 })
 export class MovieService {
   constructor(private http: HttpClient) { }
-  private apiUrl = 'http://localhost:4200';
-  // private apiUrl = 'https://angular-training-nine.vercel.app';
+  // private apiUrl = 'http://localhost:4200';
+  private apiUrl = 'https://harry-potter-movies-bice.vercel.app';
   
   getMovies(): Observable<Movie[]> {
     return this.http.get<Movie[]>(`${this.apiUrl}/movies`);
