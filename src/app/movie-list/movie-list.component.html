@@ -1,0 +1,14 @@
+<div class="container">
+    <h1>Movies</h1>
+    <div class="filter-container">
+      <input type="text" [(ngModel)]="titleFilter" placeholder="Filter by title" (ngModelChange)="filterMovies()">
+      <input type="number" [(ngModel)]="yearFilter" placeholder="Filter by year" (ngModelChange)="filterMovies()">
+    </div>
+    <ul>
+      <li *ngFor="let movie of movies">
+        <span>{{ movie.title }}</span>
+        <span>{{ movie.duration }} | {{ movie.budget }} | {{ movie.release_date }}</span>
+        <button (click)="getMovieDetails(movie.id)">Details</button>
+      </li>
+    </ul>
+</div>

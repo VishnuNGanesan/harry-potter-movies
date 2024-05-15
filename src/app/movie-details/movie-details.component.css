@@ -1,0 +1,56 @@
+.movie-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .back-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .poster-summary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .poster {
+    width: 200px;
+    height: 300px;
+    margin-right: 20px;
+    border-radius: 5px;
+  }
+  
+  .summary {
+    width: 50%;
+    margin-right: 20px;
+  }
+  
+  .details-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .label {
+    font-weight: bold;
+    padding-right: 10px;
+  }
+  
+  .value {
+    padding-left: 10px;
+    border-left: 1px solid #ddd;
+  }
